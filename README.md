@@ -1,2 +1,2 @@
 # OriginSix
- Site para uso profissional, com formato Mobile e Desktop com finalidade de divulgar um serviço..
+ Site para uso profissional no formato One Page, responsiva, para uso em diversos tipos de micro, pequenas e médias empresas...
