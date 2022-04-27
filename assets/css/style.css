@@ -1,0 +1,36 @@
+
+a {
+    text-decoration: none;
+
+}
+img {
+    width: 80%;
+    height: auto;
+}
+
+
+body {
+    font: 400 1rem 'Roboto' ,  sans-serif;
+}
+h1{
+    font: 800 1.875rem 'Poppins' , sans-serif;
+}
+#header {
+    height: 4.5rem;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+
+}
+
+.container{
+    width: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
