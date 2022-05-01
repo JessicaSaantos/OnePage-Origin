@@ -54,13 +54,24 @@ h3{
     background: var(--base-color-alt);
 }
 .divider-1{
-    height: 1px;
+    height: 2px;
     background: linear-gradient(
         270deg, 
-        hsla(var(--hue), 36%, 57% , 1) 0% ,
-        hsla(var(--hue), 65%, 88% , 0.34) 100%
+        hsla(var(--hue), 36%, 57% , 1),
+        hsla(var(--hue), 65%, 88% , 0.34)
     );
 }
+
+
+.divider-2{
+    height: 2px;
+    background: linear-gradient(
+        270deg, 
+        hsla(var(--hue), 65%, 88% , 0.34) ,
+        hsla(var(--hue), 36%, 57% , 1)
+    );
+}
+
 
 /*=========     LAYOUT  ================================*/
 
@@ -76,6 +87,16 @@ h3{
 
 .section {
     padding: 5rem 0;
+}
+.section .title {
+    margin-bottom: 1rem;
+}
+.section header {
+    margin-bottom: 4rem;
+}
+.section header strong {
+    color: var(--base-color);
+    font-weight: 600;
 }
 #header { 
     border-bottom: 1px solid #e4e4e4;
@@ -227,6 +248,9 @@ nav.show div.icon-close {
     max-width: 100%;
 }
 /*=========     ABOUT  ================================*/
+#about {
+    background: white;
+}
 #about .container {
     margin: 0;
 }
@@ -254,5 +278,27 @@ nav.show div.icon-close {
 #about .text {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+/*=========     SERVICES  ================================*/
+.cards.grid {
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38) ;
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: .25rem .25rem 0 0;
+    text-align: center;
+}
+.card i {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+}
+.card .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 /*minuto 1:33 da aula 02(Maximum Speed)*/
