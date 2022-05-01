@@ -7,6 +7,8 @@
     <title>OriginSix</title>
     <!--Icones | Estratégia Pack de icones -->
     <link rel="stylesheet" href="./assets/icons/style.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!--Estilos-->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -15,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family= Poppins:wght@400;500;800 & family= Roboto:wght@500 & display=swap" rel="stylesheet">    
+    
 </head>
 <body>
     <header id="header">
@@ -41,6 +44,8 @@
 
 
     <main>
+
+        <!------ Home ------------->
 
         <section class="section" id="home">
 
@@ -72,6 +77,8 @@
         </section>
 
         <div class="divider-1"></div>
+
+         <!------ About ------------->
 
         <section class="section" id="about">
             <div class="container grid">
@@ -109,6 +116,8 @@
         </section>
 
         <div class="divider-2"></div>
+
+         <!------ Services  ------------->
 
         <section class="section" id="services">
             <div class="container grid">
@@ -150,13 +159,72 @@
             </div>
         </section>
 
+        <div class="divider-1"></div>
 
-        <!-- Continuidade depois -->
-
+        <!-- Testimonials -->
 
         <section class="section" id="testimonials">
-            <div class="container grid"></div>
+            <div class="container">
+
+                <header>
+                    <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+                </header>
+
+                <div class="testimonials swiper-container">
+
+                    <div class="swiper-wrapper">
+                        
+                        <div class="testimonial swiper-slide">
+
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos unde, laborum quos quis sapiente modi impedit molestias sit quisquam asperiores cum placeat blanditiis sint id sunt libero rerum, soluta ullam.
+                                </p>
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="">
+                                    Wanessa Souza
+                                </cite>
+                            </blockquote>
+
+                        </div>
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum fugit atque sapiente, officia explicabo deserunt nisi praesentium, dicta cumque quas incidunt, optio aspernatur. Labore eveniet incidunt, dicta animi commodi vitae.
+                                </p>
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="">
+                                    Eduarda Paiva
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe veniam dicta debitis, dolore nobis illo odit laudantium accusamus non consectetur illum ipsam soluta! Magnam, aut! Ea corporis voluptatem autem!
+                                </p>
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/69.jpg" alt="">
+                                    Paula Terrari
+                                </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    
+                </div>
+               
+            </div>
         </section>
+
+        <!-- Contact -->
 
         <section class="section" id="contact">
             <div class="container grid"></div>
@@ -165,6 +233,8 @@
 
     </main>
 
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
 </body>
