@@ -42,3 +42,21 @@ const swiper = new Swiper('.swiper-container', {
    mousewheel: true,
    keyboard: true
   });
+
+  /* ScrollReveal: Mostrar elementos quando der Scroll na pgn*/
+  const scrollReveal = ScrollReveal({
+      origin:'top' ,
+      distance: '30px' ,
+      duration: 900 ,
+      reset: true 
+  })
+
+  scrollReveal.reveal(
+      `#home .text , #home .image ,
+       #about .text , #about .image,
+       #services header , #services .card,
+       #testimonials header , #testimonials .testimonials,
+       #contact .text , #contact .links
+      `,
+        {inteval:100}
+  )
