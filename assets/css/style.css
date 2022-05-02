@@ -431,6 +431,11 @@ footer i {
 }
 footer .social a{
  margin-right: 2rem;
+ transition: 0.3s;
+ display: inline-block;
+}
+footer .social a:hover {
+    transform: translateY(-8px);
 }
 
 /*Back to top*/
@@ -461,5 +466,24 @@ transform: translateY(100%);
     opacity: 1;
     transform: translateY(0);
 }
+/*=========     MEDIA QUERIES  ================================*/
+
+/* breakpoints :
+>>1200
+>>1023
+>>992
+>>767
+iniciar aula 5
+*/
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 767px) {
+
+}
+
+
 
 

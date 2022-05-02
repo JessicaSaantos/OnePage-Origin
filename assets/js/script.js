@@ -19,10 +19,11 @@ for (const link of links ) {
 }
 
 /* Alteração no header da pgn quando ocorrer o scroll */
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
 
-window.addEventListener('scroll' , function(){
+function changeHeaderScroll (){
+    const header = document.querySelector('#header')
+    const navHeight = header.offsetHeight
+
     if (window.scrollY >= navHeight) {
         //scroll é maior que a altura do header
         header.classList.add('scroll')
@@ -30,7 +31,8 @@ window.addEventListener('scroll' , function(){
     else{
         header.classList.remove('scroll')
     }
-})
+}
+
 
 /* Testimonials carousel slider swiper */
 
@@ -56,18 +58,26 @@ const swiper = new Swiper('.swiper-container', {
        #about .text , #about .image,
        #services header , #services .card,
        #testimonials header , #testimonials .testimonials,
-       #contact .text , #contact .links
+       #contact .text , #contact .links ,
+       footer .brand , footer .social
       `,
         {inteval:100}
   )
 
   /*Botão voltar para o topo*/ 
-  const topButton = document.querySelector('.back-to-top')
-    window.addEventListener('scroll' , function(){
+
+  function backToTop() {
+    const topButton = document.querySelector('.back-to-top')
     if (window.scrollY >= 900 ){
         topButton.classList.add('show')
     }
     else {
         topButton.classList.remove('show')
     }
+  }
+
+  /* When Scroll */
+window.addEventListener('scroll' , function(){
+    changeHeaderScroll ()
+    backToTop()
 })
