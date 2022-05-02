@@ -60,3 +60,14 @@ const swiper = new Swiper('.swiper-container', {
       `,
         {inteval:100}
   )
+
+  /*Botão voltar para o topo*/ 
+  const topButton = document.querySelector('.back-to-top')
+    window.addEventListener('scroll' , function(){
+    if (window.scrollY >= 900 ){
+        topButton.classList.add('show')
+    }
+    else {
+        topButton.classList.remove('show')
+    }
+})
