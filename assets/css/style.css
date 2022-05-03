@@ -21,6 +21,10 @@ img {
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%); 
+
+    /* fonts */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
 }
 
 /*=========     BASE  ================================*/
@@ -34,7 +38,7 @@ body {
     background: var(--body-color);
 }
 .title {
-    font: 800 1.875rem 'Poppins' , sans-serif;
+    font: 800 var(--title-font-size) 'Poppins' , sans-serif;
     color: var(--title-color);
 }
 
@@ -90,10 +94,13 @@ h3{
 }
 
 .section {
-    padding: 5rem 0;
+    padding: calc(5rem + var(--header-height)) 0;
 }
 .section .title {
     margin-bottom: 1rem;
+}
+.section .subtitle{
+    font-size: var(--subtitle-font-size);
 }
 .section header {
     margin-bottom: 4rem;
@@ -127,9 +134,6 @@ h3{
     transition: 0.2s;
 }
 
-main {
-    margin-top: calc(var(--header-height) + 2rem); /*Função de cálculo no CSS*/
-}
 
 /*=========     LOGO  ================================*/
 .logo{
@@ -160,7 +164,7 @@ nav ul li a {
     transition: color 0.2s;
     position: relative;
 }
-nav ul li:hover{
+nav ul li:hover {
     color: var(--base-color);
 }
 nav ul li a::after { /*Efeito da borda abaixo do texto*/
@@ -175,7 +179,8 @@ nav ul li a::after { /*Efeito da borda abaixo do texto*/
 
     transition: width 0.2s; /*Borda aparecendo gradativamente*/
 }
-nav ul li a:hover::after {
+nav ul li a:hover::after ,
+nav ul li a.active::after  {
     width: 100%;
 }
 nav .menu {
@@ -417,6 +422,9 @@ nav.show div.icon-close {
 footer{
     background: var(--base-color);
 }
+footer.section {
+    padding: 4rem 0;
+}
 footer .brand .logo {
     display: inline-block;
     margin-bottom: 1.5rem;
@@ -475,9 +483,119 @@ transform: translateY(100%);
 >>767
 iniciar aula 5
 */
+@media (min-width: 1200px) {
+    /* reusable classes */
+    .container {
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section {
+        padding: 10rem 0;
+    }
+    .section header ,
+    #testimonials header {
+        max-width: 32rem;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
+    .button {
+        height: 3.125rem;
+    }
+    
+
+    /* navigation */
+    nav .menu {
+        opacity: 1;
+        visibility: visible;
+        top:0;
+    }
+
+    nav .menu ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav .menu ul li a.title {
+        font: 400 1rem 'Roboto' ,  sans-serif;
+    }
+
+    nav .icon-menu {
+        display: none;
+    }
+
+    /* layout */
+    main {
+        /* margin-top: calc(var(--header-height) + 2rem); Função de cálculo no CSS*/
+         margin-top: var(--header-height);
+     }
+
+    /* home */
+    #home .container {
+        grid-auto-flow: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    #home .image {
+        order: 1;
+    }
+    #home .text {
+        order: 0;
+        max-width: 24rem;
+        text-align: left;
+    }
+    /* about */
+    #about .container {
+        margin: 0 auto;
+        grid-auto-flow: column;
+    }
+    /* services */
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr; /* Dividindo todo o espaço em frações por igual*/
+    }
+    .card {
+        padding-left: 3rem ;
+        padding-right: 3rem ;
+    }
+
+    /* testimonials */
+    #testimonials .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* contact */
+    #contact .container {
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact .text {
+        max-width: 25rem;
+    }
+    /* footer */
+    footer.section {
+        padding: 3.75rem 0;
+    }
+
+    footer .container {
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer .logo {
+        font-size: 2.25rem;
+    }
+
+}
 @media (min-width: 992px) {
-
+    :root {
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
 }
 
 @media (min-width: 767px) {

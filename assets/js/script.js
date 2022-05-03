@@ -19,10 +19,11 @@ for (const link of links ) {
 }
 
 /* Alteração no header da pgn quando ocorrer o scroll */
+const header = document.querySelector('#header')
+const navHeight = header.offsetHeight
 
 function changeHeaderScroll (){
-    const header = document.querySelector('#header')
-    const navHeight = header.offsetHeight
+   
 
     if (window.scrollY >= navHeight) {
         //scroll é maior que a altura do header
@@ -42,7 +43,13 @@ const swiper = new Swiper('.swiper-container', {
        el: '.swiper-pagination',
    },
    mousewheel: true,
-   keyboard: true
+   keyboard: true,
+   breakpoints: {
+       767: {
+           slidesPerView: 2,
+            setWrapperSize: true
+       }
+   }
   });
 
   /* ScrollReveal: Mostrar elementos quando der Scroll na pgn*/
@@ -65,9 +72,8 @@ const swiper = new Swiper('.swiper-container', {
   )
 
   /*Botão voltar para o topo*/ 
-
+  const topButton = document.querySelector('.back-to-top')
   function backToTop() {
-    const topButton = document.querySelector('.back-to-top')
     if (window.scrollY >= 900 ){
         topButton.classList.add('show')
     }
@@ -76,8 +82,41 @@ const swiper = new Swiper('.swiper-container', {
     }
   }
 
+
+/* Menu ativo conforme a seção visível na pgn (não deu , tentar de novo) */ 
+    const sections = document.querySelectorAll('main section[id]')
+    
+    function menuAtivo () {
+
+        const limite = window.pageYOffset + (window.innerHeight / 8) * 4
+        
+        for ( const section of sections ) {
+            const sectionTop = section.offsetTop
+            const sectionHeight = section.offsetHeight
+            const sectionId = section.getAttribute('id')
+
+            let limiteStart = limite >= sectionTop
+            let limiteEnd = limite <= sectionTop + sectionHeight
+
+
+            if (limiteStart && limiteEnd){
+                document
+                .querySelector('header nav ul li a [href=' + sectionId + ']')
+                .classList.add('active')
+            }
+            else {
+                document
+                .querySelector('header nav ul li a [href=' + sectionId + ']')
+                .classList.remove('active')
+                
+            }
+        }    
+    }
+    
+
   /* When Scroll */
-window.addEventListener('scroll' , function(){
-    changeHeaderScroll ()
+  window.addEventListener('scroll' , function(){
+    changeHeaderScroll()
     backToTop()
+    menuAtivo ()
 })
