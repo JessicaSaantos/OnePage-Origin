@@ -83,10 +83,11 @@ const swiper = new Swiper('.swiper-container', {
   }
 
 
-/* Menu ativo conforme a seção visível na pgn (não deu , tentar de novo) */ 
-    const sections = document.querySelectorAll('main section[id]')
+/* Menu ativo conforme a seção visível na pgn*/
     
     function menuAtivo () {
+
+        const sections = document.querySelectorAll('main section[id]')
 
         const limite = window.pageYOffset + (window.innerHeight / 8) * 4
         
@@ -101,15 +102,15 @@ const swiper = new Swiper('.swiper-container', {
 
             if (limiteStart && limiteEnd){
                 document
-                .querySelector('header nav ul li a [href=' + sectionId + ']')
+                .querySelector('nav ul li a[href*=' + sectionId + ']')
                 .classList.add('active')
             }
-            else {
+            else{
                 document
-                .querySelector('header nav ul li a [href=' + sectionId + ']')
+                .querySelector('nav ul li a[href*=' + sectionId + ']')
                 .classList.remove('active')
-                
             }
+            
         }    
     }
     

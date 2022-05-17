@@ -164,7 +164,8 @@ nav ul li a {
     transition: color 0.2s;
     position: relative;
 }
-nav ul li:hover {
+nav ul li a:hover ,
+nav ul li a.active {
     color: var(--base-color);
 }
 nav ul li a::after { /*Efeito da borda abaixo do texto*/
@@ -520,8 +521,13 @@ iniciar aula 5
 
     nav .menu ul li a.title {
         font: 400 1rem 'Roboto' ,  sans-serif;
+        -webkit-font-smoothing: antialiased;
     }
-
+    nav .menu ul li a.active {
+        font-weight: bold;
+        -webkit-font-smoothing: auto;
+        
+    }
     nav .icon-menu {
         display: none;
     }
