@@ -22,7 +22,7 @@ Html | Css | JavaScript |SwipeJS | randomuser.me
 
 ### Aprendizados:
 <p> 📚 Através desse projeto foi possível exercitar o uso da linguagem de marcação HTML e principalmente estilização CSS para organizar as seções e exibir cada uma de forma interativa, e suave conforme a navegação do usuário pela página.</p> 
-<p> Também usando DOM no JS foi possível desenvolver uma aplicação com funcionalidades de navegação pelo menu e apresentação de link ativo da seção atual, com uso de métodos como toggle e classList junto com CSS aprimorar mudanças de estilo quando ocorre o scroll da página. </p>
+<p> Também usando DOM no JS foi possível desenvolver uma aplicação com funcionalidades de menu de navegação e apresentação de link ativo da seção atual, e com uso de métodos como toggle e classList junto com CSS aprimorar mudanças de estilo quando ocorre o scroll da página. </p>
 <p> Além disso foi possível estudar e aplicar as funcionalidades das bibliotecas scrollReveal para aprensetar as seções de modo gradativo conforme o scroll ocorre, e swiper para desenvolver o carrossel de depoimentos que exibe as declarações dos clientes que já utilizaram os serviços.</p>
 <p>
     🔗 Esse desenvolvimento foi realizado em uma maratona de aulas da <a href="https://www.rocketseat.com.br/" rel="nofollow">Rocketseat</a>.
