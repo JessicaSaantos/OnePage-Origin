@@ -21,8 +21,8 @@ Html | Css | JavaScript |SwipeJS | randomuser.me
 5 | 3 | ECMAScript 2018 | ScrollReveal |IconMoon
 
 ### Aprendizados:
-<p> 📚 Através desse projeto foi possível exercitar o uso da linguagem de marcação HTML e estilização CSS para organizar as seções e exibir cada uma de forma dinâmica, e suave conforme a navegação do usuário pela página.</p> 
-<p> Também usando DOM foi possível construir a interface de vitrine dos pedidos de forma automatizada permitido o JavaScript construir cada template, usando assim o JS para apresentar os filmes sem necessariamente ter o contéudo na marcação HTML, pois com o próprio JS foi possível fazer a listagem dos filmes com loop e a criação de elementos HTML. </p>
+<p> 📚 Através desse projeto foi possível exercitar o uso da linguagem de marcação HTML e principalmente estilização CSS para organizar as seções e exibir cada uma de forma interativa, e suave conforme a navegação do usuário pela página.</p> 
+<p> Também usando DOM no JS foi possível desenvolver uma aplicação com funcionalidades de navegação pelo menu e apresentação de link ativo da seção atual, com uso do toggle e classeList junto com CSS aprimorar mudanças de estilo quando ocorre o scrooll. </p>
 <p> Além disso foi possível estudar as funcionalidades e métodos para desenvolver um carrinho de compras, que exibe ou remove os pedidos selecionados, e atualiza o preço total. Com criação de Array para armazenar os dados, uso de evento e target para identificação do item selecionado e outros métodos como find para pesquisar a existência do item na lista e splice para remover do array. Construindo assim uma plataforma funcional.</p>
 <p>
     🔗 Esse desenvolvimento foi realizado em uma maratona de aulas da <a href="https://www.rocketseat.com.br/" rel="nofollow">Rocketseat</a>.
