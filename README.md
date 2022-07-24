@@ -39,10 +39,9 @@ Html | Css | JavaScript |SwipeJS | randomuser.me
     - /css
         - reset.css
         - style.css
-    - /img
+    - /icons
     - /js
         - script.js
-        - produtos.js
 
 ### Status do Projeto: 
 *Concluído* ✅
