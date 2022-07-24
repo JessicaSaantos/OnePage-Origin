@@ -1,19 +1,60 @@
-# OriginSix
- Site para uso profissional no formato One Page, responsiva, aplicação para diversos tipos de micro, pequenas e médias empresas, com objetivo de divulgar uma marca ou serviço. 
 
-Tecnologias
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+***
 
-HTML
-CSS
-JavaScript
-Bibliotecas
+<div align="center">
 
-Fontes do Google
-SwipeJS
-ScrollReveal
-Utilitários
+ [![](https://img.shields.io/badge/🔗-Sobre-red)](#Descrição) • [![](https://img.shields.io/badge/🔗-Tecnologias%20Utilizadas-red)](#Tecnologias-Utilizadas) • [![](https://img.shields.io/badge/🔗-Objetivos-red)](#Aprendizados) • [![](https://img.shields.io/badge/🔗-O%20Projeto-red)](#O-Projeto) •  
+ [![](https://img.shields.io/badge/🔗-Status-red)](#Status-do-Projeto) • [![](https://img.shields.io/badge/🔗-Demonstração-red)](#Demonstração) 
 
-randomuser.me
-IconMoon <br>
+</div>
+
+# FreeHair
+ ## Descrição:
+ **🔗Projeto FreeHair:** Site para uso profissional no formato One Page, responsiva, aplicação para diversos tipos de micro, pequenas e médias empresas, com objetivo de divulgar uma marca ou serviço. 
+
+ ### Tecnologias Utilizadas:
+
+ 
+Marcação | Estilização | Programção | Bibliotecas | Utilitários 
+---|---|---|---|---
+Html | Css | JavaScript |SwipeJS | randomuser.me
+5 | 3 | ECMAScript 2018 | ScrollReveal |IconMoon
+
+### Aprendizados:
+<p> 📚 Através desse projeto foi possível exercitar o uso da linguagem de marcação HTML e estilização CSS para organizar as seções e exibir cada uma de forma dinâmica, e suave conforme a navegação do usuário pela página.</p> 
+<p> Também usando DOM foi possível construir a interface de vitrine dos pedidos de forma automatizada permitido o JavaScript construir cada template, usando assim o JS para apresentar os filmes sem necessariamente ter o contéudo na marcação HTML, pois com o próprio JS foi possível fazer a listagem dos filmes com loop e a criação de elementos HTML. </p>
+<p> Além disso foi possível estudar as funcionalidades e métodos para desenvolver um carrinho de compras, que exibe ou remove os pedidos selecionados, e atualiza o preço total. Com criação de Array para armazenar os dados, uso de evento e target para identificação do item selecionado e outros métodos como find para pesquisar a existência do item na lista e splice para remover do array. Construindo assim uma plataforma funcional.</p>
+<p>
+    🔗 Esse desenvolvimento foi realizado em uma maratona de aulas da <a href="https://www.rocketseat.com.br/" rel="nofollow">Rocketseat</a>.
+</p>
+
+### O Projeto
+
+#### Estrutura de arquivos
+
+
+* README.md
+* index.html
+* /assets
+    - /css
+        - reset.css
+        - style.css
+    - /img
+    - /js
+        - script.js
+        - produtos.js
+
+### Status do Projeto: 
+*Concluído* ✅
+Objetivo principal do projeto está finalizado. Mas outras funcionalidades serão adicionadas ao FreeHair.
+
+**Possíveis funcionalidades:**
+ - [x] Interface Principal
+ - [x] Responsividade
+ - [ ] Adicionar localização com Google maps 
+
+ ### Demonstração: 
+🎥📷
+
+
 **Para ver o funcionamento é só clicar [aqui](https://jessicasaantos.github.io/OnePage-Origin/)**
